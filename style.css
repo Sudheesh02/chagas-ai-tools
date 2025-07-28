@@ -1,41 +1,30 @@
 body {
-  font-family: Arial, sans-serif;
-  background: url('images/background.jpg') no-repeat center fixed;
-  background-size: cover;
-  margin: 0;
-  padding: 20px;
-  color: white;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 .container {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 input, button {
-  padding: 10px;
-  margin: 10px;
-  width: 80%;
+    padding: 8px;
 }
 button {
-  background: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
+.hidden {
+    display: none;
 }
-.gallery img {
-  width: 100px;
-  border-radius: 5px;
-}
-footer {
-  margin-top: 20px;
-  font-size: 0.8em;
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
