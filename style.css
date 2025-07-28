@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('images/background.jpg') no-repeat center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+input, button {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+}
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.gallery img {
+  width: 100px;
+  border-radius: 5px;
+}
+footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
