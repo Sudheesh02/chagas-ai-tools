@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chagas Predictor</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Chagas Disease Predictor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Chagas Disease Predictor</h1>
-    <p>Enter a SMILES string to predict Fit_LogAC50:</p>
-    <input type="text" id="smiles-input" placeholder="e.g., CC1(CC2=C(CO1)C(=NC(=C2C#N)...">
-    <button onclick="predict()">Predict</button>
-    <div id="result"></div>
-    <div class="gallery">
-      <img src="images/compound1.png" alt="Compound">
-      <img src="images/background.jpg" alt="Chagas Disease">
+    <div class="container">
+        <h1>Chagas Disease Predictor</h1>
+        <form id="prediction-form">
+            <!-- Example inputs - customize based on your model's requirements -->
+            <label>Age:</label>
+            <input type="number" id="age" required>
+            
+            <label>Symptom Score (1-10):</label>
+            <input type="number" id="symptoms" min="1" max="10" required>
+            
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result" class="hidden">
+            <h3>Prediction Result:</h3>
+            <p id="prediction-output"></p>
+            <p id="confidence"></p>
+        </div>
     </div>
-    <footer>Made by [Your Name], 3rd Sem</footer>
-  </div>
-  <script src="script.js"></script>
+    <!-- Load TensorFlow.js if needed -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.18.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
